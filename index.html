@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Carrito de compras</title>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>APPLE STORE</h1>
+    </div>
+    <div id="contenedorlogo">
+      <img src="/Img/logo2.jpeg" alt="appstore" id="logotipo2">
+    </div>
+  </header>
+  <!-- --------------------------------------------------------------------------------- -->
+  <!-- MENU OF NAV -->
+  <div class="contenedor_flex">
+    <!-- Este Select se debe renderizar por Javascript consumiendo el objeto -->
+    <div class="contentmenu">
+      <select name="" id="select-products">
+        <option value="">Select one product</option>
+      </select>
+    </div>
+    <div class="contentmenu">
+      <select name="" id="select-price">
+        <option value="">filter for price</option>
+      </select>
+    </div>
+    <div class="contentmenu">
+      <button class="btn-product" id="reload_products"> new product </button>
+    </div>
+  </div>
+  <div class="contentCardShop">
+    <div class="contentCardShop2">
+      <button class="buttonCardShop" id="buttonCardShop"></button>
+    </div>
+  </div>
+  <!-- CONTENT FOR ADD COMENT OF RESULT OF FILTER PRICE -->
+  <div id="textFilter">
+
+  </div>
+  <!-- ------------------------------------------------------------------------------------ -->
+  <!-- TARGET OF ADD PRODUCTS NEW -->
+  <div class="contenedor_flex">
+    <div class="container_add" id="container_products">
+      <div class="button_close">
+        <button class="close_button" id="close_button"></button>
+      </div>
+      <div class="boy_add">
+        <h2> ADD PRODUCTS </h2>
+      </div>
+      <div class="boy_add">
+        <p>name product:</p>
+        <input type="text" id="nameProduct">
+      </div>
+      <div class="boy_add">
+        <p>price:</p>
+        <input type="text" id="priceProduct">
+      </div>
+      <div class="boy_add">
+        <p>imagen:</p>
+        <input type="file" id="imagenProduct">
+      </div>
+      <div class="boy_add">
+        <button class="btn-product" id="button_products"> add products</button>
+        <button class="btn-product" id="button_delete"> delete </button>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------------------- -->
+  <!-- TARGET OF CARDSHOP -->
+  <div class="contenedor_flex">
+    <div class="container_buy" id="container_buy">
+      <button class="close_button" id="button_close"></button>
+      <h2> PRODUCTS </h2>
+      <p class="notification" id="notificacion"> ACTUALMENTE NO HAY PRODUCTOS EN EL CARRITO </p>
+    </div>
+  </div>
+  <!-- ------------------------------------------------------------------------------- -->
+  <main>
+  </main>
+  <script src="app.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>
